@@ -15,18 +15,17 @@ contract memecoin is ERC20,Ownable{
         rate=(_totalsupply*4)/100;
     }
 
-    //Assume 1$fraxeth == 1000000$meme
+
     function setRate(uint _rate)public onlyOwner{
         rate = _rate*10**decimals();
     }
     
-    // convert fraxeth to memecoin
+ 
     function convertFraxToMeme(uint amount)public view returns(uint) {
          uint memeamount= (amount*rate)/ 1 ether;
          return memeamount;
     }
 
-     // convert fraxeth to memecoin
     function convertMemeToFrax(uint amount)public view returns(uint) {
          uint fraxamount = (amount * 1 ether)/rate;
          return fraxamount;

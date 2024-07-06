@@ -18,7 +18,7 @@ const Memecard: React.FC<MemecardProps> = ({ memeData }) => {
 
   return (
     <Link href={`/${address}`}>
-      <div className="w-full min-h-[200px] bg-[#fff] -z-[30] shadow-sm  shadow-primarycolor/50 hover:shadow-none border-primarycolor border-[1px] rounded-lg overflow-hidden">
+      <div className="w-full min-h-[200px] bg-blue-100 -z-[30] shadow-sm  shadow-primarycolor/50 hover:shadow-none border-black border-[1px] rounded-lg overflow-hidden">
         <div className="flex flex-col lg:flex-row w-full gap-x-3">
           <div className="h-[300px] w-full lg:h-[200px] lg:w-[150px] relative">
             <Image
