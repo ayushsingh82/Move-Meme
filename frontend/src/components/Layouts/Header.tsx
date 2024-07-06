@@ -16,7 +16,7 @@ const Header = (props: Props) => {
         <div className="flex gap-x-1 capitalize items-center">
           <Cool />
           <span className=" font-black text-2xl">
-            meme<span className="bg-primarycolor">Frax</span>
+            Move<span className="bg-white">Meme</span>
           </span>
         </div>
 

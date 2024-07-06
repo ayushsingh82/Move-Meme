@@ -6,7 +6,7 @@ type Props = {};
 const Memesection = (props: Props) => {
   return (
     <Tabs defaultValue="Terminal" className="container mt-10">
-      <TabsList className="grid w-full grid-cols-2 lg:w-[250px] bg-[#fffdd0] ">
+      <TabsList className="grid w-full grid-cols-2 lg:w-[250px] bg-[#fff] ">
         <TabsTrigger value="Following">Following</TabsTrigger>
         <TabsTrigger value="Terminal">Terminal</TabsTrigger>
       </TabsList>

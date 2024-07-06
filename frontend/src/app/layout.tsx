@@ -8,7 +8,7 @@ import Providers from '../providers';
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Memefrax",
+  title: "MoveMeme",
   description: "where to get your memes",
   icons: {
     icon: "/svg/smile2.svg",
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.className} antialiased flex flex-col min-h-screen bg-[#fffdd0] `}
+        className={`${montserrat.className} antialiased flex flex-col min-h-screen bg-[#d0b0ff] `}
       >
         <Providers>
         <Header />

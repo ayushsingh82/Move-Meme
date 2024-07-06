@@ -14,13 +14,13 @@ const Footer = (props: Props) => {
             <div className="flex gap-x-1 capitalize items-center">
               <Cool />
               <span className=" font-black text-2xl">
-                meme<span className="bg-primarycolor">Frax</span>
+                Move<span className="bg-white">Meme</span>
               </span>
             </div>
           </div>
 
           <span>Disclaimer</span>
-          <span>Message us</span>
+          <span>connect with us</span>
         </div>
         <div className="flex flex-row gap-x-4 item-center mt-3">
           <div className=" rounded-full border-primarycolor p-2 border-[1px] ">

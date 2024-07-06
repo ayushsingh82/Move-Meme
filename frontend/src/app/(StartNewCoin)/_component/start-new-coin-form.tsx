@@ -113,7 +113,7 @@ export function CustomForm() {
       toast({
         title: "Sucessfully created your token",
         className:
-          "flex flex-col gap-y-8 bg-[#fffdd0] border-2 border-primarycolor",
+          "flex flex-col gap-y-8 bg-[#d0b0ff] border-2 border-primarycolor",
         action: (
           <ToastAction altText="Try again">
             {/* <div className="flex gap-x-2 flex-col gap-y-2 items-center ">
@@ -139,7 +139,7 @@ export function CustomForm() {
               <FormLabel>Name</FormLabel>
               <FormControl>
                 <Input
-                  className="bg-[#fffdd0] "
+                  className="bg-[#ffff] "
                   placeholder="Name"
                   {...field}
                 />
@@ -156,7 +156,7 @@ export function CustomForm() {
               <FormLabel>Description</FormLabel>
               <FormControl>
                 <Textarea
-                  className="bg-[#fffdd0] "
+                  className="bg-[#ffff] "
                   placeholder="Description"
                   {...field}
                 />
@@ -173,7 +173,7 @@ export function CustomForm() {
               <FormLabel>Ticker</FormLabel>
               <FormControl>
                 <Input
-                  className="bg-[#fffdd0] "
+                  className="bg-[#ffff] "
                   placeholder="Ticker"
                   {...field}
                 />
@@ -190,7 +190,7 @@ export function CustomForm() {
               <FormLabel>TotalSupply</FormLabel>
               <FormControl>
                 <Input
-                  className="bg-[#fffdd0] "
+                  className="bg-[#ffff] "
                   placeholder="totalsupply"
                   {...field}
                 />
@@ -225,7 +225,7 @@ export function CustomForm() {
                     <Input
                       placeholder="Twitter Link"
                       {...field}
-                      className="bg-[#fffdd0] "
+                      className="bg-[#ffff] "
                     />
                   </FormControl>
                   <FormMessage />
@@ -242,7 +242,7 @@ export function CustomForm() {
                     <Input
                       placeholder="Facebook Link"
                       {...field}
-                      className="bg-[#fffdd0] "
+                      className="bg-[#ffff] "
                     />
                   </FormControl>
                   <FormMessage />
@@ -271,7 +271,7 @@ export function CustomForm() {
         )}
 
         <Button
-          className="px-8 py-0.5  border-2 border-black dark:border-white uppercase bg-[#fffdd0]  text-black transition duration-200 text-sm shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] hover:bg-primarycolor hover:text-white "
+          className="px-8 py-0.5  border-2 border-black dark:border-white uppercase bg-[#ffff]  text-black transition duration-200 text-sm shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] hover:bg-primarycolor hover:text-white "
           type="submit"
         >
           Submit

@@ -57,14 +57,14 @@ const TradeBox = (props: Props) => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="max-w-[25rem] mx-auto rounded-lg  bg-[#fffdd0] min-h-32 border-primarycolor border-[1px] p-3 py-6"
+      className="max-w-[25rem] mx-auto rounded-lg  bg-[#fff] min-h-32 border-white border-[1px] p-3 py-6"
     >
       <div className="w-full">
-        <div className="rounded bg-primarycolor  grid place-content-center text-black font-semibold max-w-max px-4 py-2 mx-auto capitalize">
+        <div className="rounded bg-white  grid place-content-center text-black font-semibold max-w-max px-4 py-2 mx-auto capitalize">
           presale
         </div>
-        <div className="w-full my-5 flex  justify-between">
-          <TradeBtn>
+        <div className="w-full my-5 flex  justify-between bg-white">
+          <TradeBtn className="bg-white">
             <span>switch to CAPTION</span>
           </TradeBtn>
           <TradeBtn>
@@ -74,13 +74,13 @@ const TradeBox = (props: Props) => {
 
         <div className="">
           <Input
-            className="bg-[#fffdd0] border-[2px] border-primarycolor font-bold"
+            className="bg-[#fff] border-[2px] border-primarycolor font-bold"
             value={watchPrice ? watchPrice : selectedprice}
             {...register("price", { valueAsNumber: true })}
           />
         </div>
 
-        <div className="w-full my-5 flex gap-x-3 flex-wrap max-lg:items-center max-lg:justify-center gap-y-2  ">
+        <div className="w-full my-5 flex gap-x-3 flex-wrap max-lg:items-center max-lg:justify-center gap-y-2  bg-white">
           {buttonvalues.map((button, index) => (
             <TradeBtn
               key={index}
@@ -91,14 +91,14 @@ const TradeBox = (props: Props) => {
               className={cn(
                 `${
                   +selectedprice === +button
-                    ? "!bg-primarycolor !text-bold"
+                    ? "!bg-black !text-bold"
                     : ""
                 }`
               )}
             >
               <span className="flex gap-x-1">
                 <span className="">{button.name} </span>
-                <span>fraxeth</span>
+                <span>Move</span>
               </span>
             </TradeBtn>
           ))}
@@ -108,11 +108,11 @@ const TradeBox = (props: Props) => {
           <span className="font-semibold text-sm">
             {equivalentcoinprice.toFixed(2)}
           </span>
-          <span className="text-primarycolor font-bold">CAPTION</span>
+          <span className="text-black font-bold">CAPTION</span>
         </div>
 
         <Button
-          className="px-8 py-0.5 my-5 w-full  border-2 border-black dark:border-white uppercase bg-[#fffdd0]   text-black transition duration-200 text-sm shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] hover:bg-primarycolor hover:text-white hover:shadow-none"
+          className="px-8 py-0.5 my-5 w-full  border-2 border-black dark:border-white uppercase bg-[#fff]   text-black transition duration-200 text-sm shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] hover:bg-primarycolor hover:text-white hover:shadow-none"
           type="submit"
         >
           place trade
