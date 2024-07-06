@@ -18,7 +18,7 @@ const Memecard: React.FC<MemecardProps> = ({ memeData }) => {
 
   return (
     <Link href={`/${address}`}>
-      <div className="w-full min-h-[200px] bg-[#fffdd0] -z-[30] shadow-sm  shadow-primarycolor/50 hover:shadow-none border-primarycolor border-[1px] rounded-lg overflow-hidden">
+      <div className="w-full min-h-[200px] bg-[#fff] -z-[30] shadow-sm  shadow-primarycolor/50 hover:shadow-none border-primarycolor border-[1px] rounded-lg overflow-hidden">
         <div className="flex flex-col lg:flex-row w-full gap-x-3">
           <div className="h-[300px] w-full lg:h-[200px] lg:w-[150px] relative">
             <Image
@@ -32,20 +32,20 @@ const Memecard: React.FC<MemecardProps> = ({ memeData }) => {
           </div>
           <div className="flex-1 flex-col gap-y-4 capitalize py-3 px-3">
             <div className="flex gap-x-3 text-sm items-center">
-              <span className="font-semibold text-primarycolor text-sm">
+              <span className="font-semibold text-black text-sm">
                 created by
               </span>
               <span className="text-[14px] font-semibold ">{creator.slice(0,-25)}</span>
             </div>
             <div className="flex gap-x-3 text-sm items-center">
-              <span className="font-semibold text-primarycolor text-sm">
+              <span className="font-semibold text-black text-sm">
                 address
               </span>
               <span className="text-[14px] font-semibold ">{address.slice(0,-25)}</span>
             </div>
             <div className="flex gap-x-3 text-sm flex-col justify-center">
               <div className="flex gap-x-3">
-                <span className="font-semibold text-primarycolor">
+                <span className="font-semibold text-black">
                   token name
                 </span>
                 <span className="text-[14px] font-semibold ">{tokenName}</span>
