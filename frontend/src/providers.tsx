@@ -7,12 +7,15 @@ import { ConnectKitProvider, getDefaultConfig } from "connectkit";
 const config = createConfig(
   getDefaultConfig({
     // Your dApps chains
-    chains: [holesky],
-    transports: {
-      // RPC URL for each chain
-      [holesky.id]: http(
-        `	https://rpc.testnet.frax.com`,
-      ),
+    const chains = [
+      {
+        name: 'Move-EVM',
+        networkId: 30730,
+        rpcUrl: 'https://mevm.devnet.m1.movementlabs.xyz',
+        currency: 'MOVE',
+      },
+    ];
+    
     },
      // Required API Keys
      walletConnectProjectId: "",

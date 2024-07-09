@@ -67,7 +67,7 @@ export function CustomForm() {
  async function onSubmit(values: z.infer<typeof formSchema>) {
     let tx = await  result?.writeContractAsync({ 
       abi,
-      address: '0x84767Daf924dC4c9FE429f75C7D6ad1E8493eC76',
+      address: '0x480b8a60f667e3dDa6e593dA57c093c4a5eC06E3',
       functionName: 'createMemecoin',
       args: [
         values.name,
